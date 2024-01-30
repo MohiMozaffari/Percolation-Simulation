@@ -22,18 +22,14 @@ python percolation_simulation.py
 ## Code Structure
 The code consists of the following main parts:
 
-newgrid(p, N=100): Creates a new grid of size N by N with a probability of p for each cell to be filled.
-
-walk(m, n, grid, nwalk): Performs a depth-first search to identify the connected component and mark it with a unique identifier.
-
-check(grid): Checks the grid for percolation from the top row and marks the connected components.
-
-CountFrequency(my_list): Counts the frequency of connected components.
+* newgrid(p, N=100): Creates a new grid of size N by N with a probability of p for each cell to be filled.
+* walk(m, n, grid, nwalk): Performs a depth-first search to identify the connected component and mark it with a unique identifier.
+* check(grid): Checks the grid for percolation from the top row and marks the connected components.
+* CountFrequency(my_list): Counts the frequency of connected components.
 
 ## Parameters
-p: Probability of each cell being filled.
-
-N: Size of the grid.
+* p: Probability of each cell being filled.
+* N: Size of the grid.
 
 ## Visualization
 The simulation results are visualized using Seaborn's heatmap, showing the percolated grid with different colors representing connected components. The size of the giant component is calculated and displayed in the title of the plot.
